@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    /*font-family: 'Segoe UI';*/
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #9c27b0,#31d5eb);
+}
+
+.container{
+    position: relative;
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .kotak{
+    position: relative;
+    width: 460px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.1);
+}
+
+.container .kotak h2{
+    font-size: 1.75em;
+    font-weight: 500;
+    color:#333;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.container .kotak #list{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.container .kotak #list input{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    outline:  none;
+}
+
+.container .kotak #list button{
+    background: #4bae4f;
+    color: #fff;
+    min-width: 100px;
+    font-weight: 500;
+    border: 1px solid #333;
+    cursor: pointer;
+    outline: none;
+}
+
+.container ol {
+    position: relative;
+    padding: 10px 20px 10px 40px;
+    width: 100%;
+    min-height: 398px;
+    background: #fff repeating-linear-gradient(transparent 0%, transparent 99%, #000000 99%, #000000 100%);
+    background-size: 50px 50px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container ol li{
+    position: relative;
+    font-size: 1.5em;
+    height: 50px;
+}
+
+.container ol li .hapus{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background: #f00;
+    background: url("https://w7.pngwing.com/pngs/816/255/png-transparent-plus-and-minus-signs-plus-minus-sign-meno-symbol-miscellaneous-sign-area-thumbnail.png");
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container ol li.sudah p{
+    text-decoration: line-through;
+    color: rgba(0,0,0,0.2);
+}
+
+.container ol li.sudah p:after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 35px;
+    width: 25px;
+    height: 25px;
+    background: url("https://assets.kompasiana.com/statics/files/14134528431466521097.jpg?t=o&v=300?t=o&v=700");
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
